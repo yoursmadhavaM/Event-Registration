@@ -1,0 +1,358 @@
+[2025-07-31 19:20:50] Error: Undefined array key "file" in C:\xampp\htdocs\myphp\error_handler.php on line 79
+URL: /myphp/register.php
+
+[2025-07-31 19:20:50] Error: Undefined array key "line" in C:\xampp\htdocs\myphp\error_handler.php on line 80
+URL: /myphp/register.php
+
+[2025-07-31 19:20:50] Custom Error: Registration successful in  on line 0
+URL: /myphp/register.php
+
+[2025-07-31 19:20:50] Error: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\myphp\error_handler.php:221) in C:\xampp\htdocs\myphp\register.php on line 109
+URL: /myphp/register.php
+
+[2025-08-01 17:34:38] Custom Error: Registration failed: Email has pending payment
+Context: {"email":"rajeshpidathala19@gmail.com"}
+URL: /myphp/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 17:36:19 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\myphp\send_email.php on line 34
+[2025-08-01 17:36:19] Custom Error: Failed to send registration email
+Context: {"email":"rajeshpidathala19@gmail.com","participant_id":24,"fullname":"rajesh"}
+URL: /myphp/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 17:36:19] Custom Error: Registration successful
+Context: {"participant_id":24,"email":"rajeshpidathala19@gmail.com","fullname":"rajesh","email_sent":false}
+URL: /myphp/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 17:57:06 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\myphp\update_test_payment.php on line 174
+[01-Aug-2025 17:59:07 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\myphp\send_email.php on line 34
+[2025-08-01 17:59:07] Custom Error: Failed to send registration email
+Context: {"email":"rajeshpidathala4@gmail.com","participant_id":25,"fullname":"rajesh"}
+URL: /myphp/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 17:59:07] Custom Error: Registration successful
+Context: {"participant_id":25,"email":"rajeshpidathala4@gmail.com","fullname":"rajesh","email_sent":false}
+URL: /myphp/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 18:26:46 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\myphp\send_email.php on line 34
+[2025-08-01 18:26:46] Custom Error: Failed to send registration email
+Context: {"email":"mamadhavlm662@gmail.com","participant_id":26,"fullname":"madhav"}
+URL: /myphp/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 18:26:46] Custom Error: Registration successful
+Context: {"participant_id":26,"email":"mamadhavlm662@gmail.com","fullname":"madhav","email_sent":false}
+URL: /myphp/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 18:31:26 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\myphp\update_test_payment.php on line 174
+[01-Aug-2025 18:55:44 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'payment_status' in 'field list' in C:\xampp\htdocs\event-registration-main\register.php:46
+Stack trace:
+#0 C:\xampp\htdocs\event-registration-main\register.php(46): mysqli->prepare('SELECT id, paym...')
+#1 {main}
+  thrown in C:\xampp\htdocs\event-registration-main\register.php on line 46
+[01-Aug-2025 18:57:28 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'payment_status' in 'field list' in C:\xampp\htdocs\event-registration-main\register.php:46
+Stack trace:
+#0 C:\xampp\htdocs\event-registration-main\register.php(46): mysqli->prepare('SELECT id, paym...')
+#1 {main}
+  thrown in C:\xampp\htdocs\event-registration-main\register.php on line 46
+[01-Aug-2025 18:57:30 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'payment_status' in 'field list' in C:\xampp\htdocs\event-registration-main\register.php:46
+Stack trace:
+#0 C:\xampp\htdocs\event-registration-main\register.php(46): mysqli->prepare('SELECT id, paym...')
+#1 {main}
+  thrown in C:\xampp\htdocs\event-registration-main\register.php on line 46
+[01-Aug-2025 18:59:58 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'payment_status' in 'field list' in C:\xampp\htdocs\event-registration-main\register.php:46
+Stack trace:
+#0 C:\xampp\htdocs\event-registration-main\register.php(46): mysqli->prepare('SELECT id, paym...')
+#1 {main}
+  thrown in C:\xampp\htdocs\event-registration-main\register.php on line 46
+[01-Aug-2025 19:00:25 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'payment_status' in 'field list' in C:\xampp\htdocs\event-registration-main\register.php:46
+Stack trace:
+#0 C:\xampp\htdocs\event-registration-main\register.php(46): mysqli->prepare('SELECT id, paym...')
+#1 {main}
+  thrown in C:\xampp\htdocs\event-registration-main\register.php on line 46
+[01-Aug-2025 19:01:13 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'payment_status' in 'field list' in C:\xampp\htdocs\event-registration-main\register.php:46
+Stack trace:
+#0 C:\xampp\htdocs\event-registration-main\register.php(46): mysqli->prepare('SELECT id, paym...')
+#1 {main}
+  thrown in C:\xampp\htdocs\event-registration-main\register.php on line 46
+[01-Aug-2025 19:03:35 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 19:03:35] Custom Error: Failed to send registration email
+Context: {"email":"mediboyinaleelavenkatamadhava@gmail.com","participant_id":1,"fullname":"asdasd"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 19:03:35] Custom Error: Registration successful
+Context: {"participant_id":1,"email":"mediboyinaleelavenkatamadhava@gmail.com","fullname":"asdasd","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 19:11:38] Custom Error: Registration failed: Email has pending payment
+Context: {"email":"mediboyinaleelavenkatamadhava@gmail.com"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 19:12:17 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 19:12:17] Custom Error: Failed to send registration email
+Context: {"email":"affiliatebyme7@gmail.com","participant_id":2,"fullname":"MEDIBOYINA LEELA VENKATA MADHAVA"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 19:12:17] Custom Error: Registration successful
+Context: {"participant_id":2,"email":"affiliatebyme7@gmail.com","fullname":"MEDIBOYINA LEELA VENKATA MADHAVA","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 19:12:26 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\update_test_payment.php on line 174
+[01-Aug-2025 19:26:06 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 19:26:06] Custom Error: Failed to send registration email
+Context: {"email":"mediboyinaleelavenkatamadhava@gmail.com","participant_id":3,"fullname":"madhav Bruh"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 19:26:06] Custom Error: Registration successful
+Context: {"participant_id":3,"email":"mediboyinaleelavenkatamadhava@gmail.com","fullname":"madhav Bruh","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 19:26:17 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\update_test_payment.php on line 174
+[01-Aug-2025 19:39:37 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 19:39:37] Custom Error: Failed to send registration email
+Context: {"email":"mamadhavlm662@gmail.com","participant_id":4,"fullname":"MEDIBOYINA LEELA VENKATA MADHAVA"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 19:39:37] Custom Error: Registration successful
+Context: {"participant_id":4,"email":"mamadhavlm662@gmail.com","fullname":"MEDIBOYINA LEELA VENKATA MADHAVA","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 19:39:43 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\update_test_payment.php on line 174
+[01-Aug-2025 19:49:28 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 19:49:28] Custom Error: Failed to send registration email
+Context: {"email":"MAMADHAVLM662@GMAIL.COM","participant_id":5,"fullname":"MEDIBOYINA LEELA VENKATA MADHAVA"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 19:49:28] Custom Error: Registration successful
+Context: {"participant_id":5,"email":"MAMADHAVLM662@GMAIL.COM","fullname":"MEDIBOYINA LEELA VENKATA MADHAVA","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 19:50:44 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 19:50:44] Custom Error: Failed to send registration email
+Context: {"email":"MAMADHAVLM662@GMAIL.COM","participant_id":6,"fullname":"MEDIBOYINA LEELA VENKATA MADHAVA"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 19:50:44] Custom Error: Registration successful
+Context: {"participant_id":6,"email":"MAMADHAVLM662@GMAIL.COM","fullname":"MEDIBOYINA LEELA VENKATA MADHAVA","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 19:53:54 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 19:53:54] Custom Error: Failed to send registration email
+Context: {"email":"mamadhavlm662@gmail.com","participant_id":7,"fullname":"MEDIBOYINA LEELA VENKATA MADHAVA"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 19:53:54] Custom Error: Registration successful
+Context: {"participant_id":7,"email":"mamadhavlm662@gmail.com","fullname":"MEDIBOYINA LEELA VENKATA MADHAVA","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 19:54:07 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\update_test_payment.php on line 174
+[01-Aug-2025 19:57:58 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 19:57:58] Custom Error: Failed to send registration email
+Context: {"email":"MAMADHAVLM662@GMAIL.COM","participant_id":8,"fullname":"MEDIBOYINA LEELA VENKATA MADHAVA"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 19:57:58] Custom Error: Registration successful
+Context: {"participant_id":8,"email":"MAMADHAVLM662@GMAIL.COM","fullname":"MEDIBOYINA LEELA VENKATA MADHAVA","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 19:58:38 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\update_test_payment.php on line 174
+[01-Aug-2025 20:02:47 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 20:02:47] Custom Error: Failed to send registration email
+Context: {"email":"mamadhavlm662@gmail.com","participant_id":9,"fullname":"madhav"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 20:02:47] Custom Error: Registration successful
+Context: {"participant_id":9,"email":"mamadhavlm662@gmail.com","fullname":"madhav","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 20:07:27 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 20:07:27] Custom Error: Failed to send registration email
+Context: {"email":"MAMADHAVLM662@GMAIL.COM","participant_id":10,"fullname":"MEDIBOYINA LEELA VENKATA MADHAVA"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 20:07:27] Custom Error: Registration successful
+Context: {"participant_id":10,"email":"MAMADHAVLM662@GMAIL.COM","fullname":"MEDIBOYINA LEELA VENKATA MADHAVA","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 20:14:50 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 20:14:50] Custom Error: Failed to send registration email
+Context: {"email":"MAMADHAVLM662@GMAIL.COM","participant_id":11,"fullname":"MEDIBOYINA LEELA VENKATA MADHAVA"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 20:14:50] Custom Error: Registration successful
+Context: {"participant_id":11,"email":"MAMADHAVLM662@GMAIL.COM","fullname":"MEDIBOYINA LEELA VENKATA MADHAVA","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 20:15:25 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\update_test_payment.php on line 174
+[01-Aug-2025 20:17:57 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 20:17:57] Custom Error: Failed to send registration email
+Context: {"email":"MAMADHAVLM662@GMAIL.COM","participant_id":12,"fullname":"MEDIBOYINA LEELA VENKATA MADHAVA"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 20:17:57] Custom Error: Registration successful
+Context: {"participant_id":12,"email":"MAMADHAVLM662@GMAIL.COM","fullname":"MEDIBOYINA LEELA VENKATA MADHAVA","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 20:26:42] Custom Error: Registration failed: Email has pending payment
+Context: {"email":"MAMADHAVLM662@GMAIL.COM"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 20:26:56] Custom Error: Registration failed: Email has pending payment
+Context: {"email":"MAMADHAVLM662@GMAIL.COM"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 20:27:13 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 20:27:13] Custom Error: Failed to send registration email
+Context: {"email":"MAMADHAVLM662@GMAIL.COM","participant_id":13,"fullname":"MEDIBOYINA LEELA VENKATA MADHAVA"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 20:27:13] Custom Error: Registration successful
+Context: {"participant_id":13,"email":"MAMADHAVLM662@GMAIL.COM","fullname":"MEDIBOYINA LEELA VENKATA MADHAVA","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 20:34:44 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 20:34:44] Custom Error: Failed to send registration email
+Context: {"email":"mamadhavlm662@gmail.com","participant_id":14,"fullname":"madhav"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 20:34:44] Custom Error: Registration successful
+Context: {"participant_id":14,"email":"mamadhavlm662@gmail.com","fullname":"madhav","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 20:37:04 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 20:37:04] Custom Error: Failed to send registration email
+Context: {"email":"mamadhavlm662@gmail.com","participant_id":15,"fullname":"MEDIBOYINA LEELA VENKATA MADHAVA"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 20:37:04] Custom Error: Registration successful
+Context: {"participant_id":15,"email":"mamadhavlm662@gmail.com","fullname":"MEDIBOYINA LEELA VENKATA MADHAVA","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 20:39:05 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 20:39:05] Custom Error: Failed to send registration email
+Context: {"email":"mamadhavlm662@gmail.com","participant_id":16,"fullname":"madhav mediboyina"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 20:39:05] Custom Error: Registration successful
+Context: {"participant_id":16,"email":"mamadhavlm662@gmail.com","fullname":"madhav mediboyina","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 20:48:06 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 20:48:06] Custom Error: Failed to send registration email
+Context: {"email":"mamadhavlm662@gmail.com","participant_id":17,"fullname":"madhav mediboyina"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 20:48:06] Custom Error: Registration successful
+Context: {"participant_id":17,"email":"mamadhavlm662@gmail.com","fullname":"madhav mediboyina","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 20:53:22 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 20:53:22] Custom Error: Failed to send registration email
+Context: {"email":"mamadhavlm662@gmail.com","participant_id":18,"fullname":"madhav mediboyina"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 20:53:22] Custom Error: Registration successful
+Context: {"participant_id":18,"email":"mamadhavlm662@gmail.com","fullname":"madhav mediboyina","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 20:56:14 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 20:56:14] Custom Error: Failed to send registration email
+Context: {"email":"mamadhavlm662@gmail.com","participant_id":19,"fullname":"madhav mediboyina"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 20:56:14] Custom Error: Registration successful
+Context: {"participant_id":19,"email":"mamadhavlm662@gmail.com","fullname":"madhav mediboyina","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 21:00:13 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 21:00:13] Custom Error: Failed to send registration email
+Context: {"email":"mamadhavlm662@gmail.com","participant_id":20,"fullname":"madhav mediboyina"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 21:00:13] Custom Error: Registration successful
+Context: {"participant_id":20,"email":"mamadhavlm662@gmail.com","fullname":"madhav mediboyina","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 21:01:14 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 21:01:14] Custom Error: Failed to send registration email
+Context: {"email":"MAMADHAVLM662@GMAIL.COM","participant_id":21,"fullname":"MEDIBOYINA MADHAVA"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 21:01:14] Custom Error: Registration successful
+Context: {"participant_id":21,"email":"MAMADHAVLM662@GMAIL.COM","fullname":"MEDIBOYINA MADHAVA","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 21:10:52 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 21:10:52] Custom Error: Failed to send registration email
+Context: {"email":"mamadhavlm662@gmail.com","participant_id":22,"fullname":"madhav mediboyina"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 21:10:52] Custom Error: Registration successful
+Context: {"participant_id":22,"email":"mamadhavlm662@gmail.com","fullname":"madhav mediboyina","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 21:11:00 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\update_test_payment.php on line 174
+[01-Aug-2025 21:56:40 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\send_email.php on line 34
+[2025-08-01 21:56:40] Custom Error: Failed to send registration email
+Context: {"email":"mamadhavlm662@gmail.com","participant_id":23,"fullname":"LEELA VENKATA MADHAVA MEDIBOYINA"}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[2025-08-01 21:56:40] Custom Error: Registration successful
+Context: {"participant_id":23,"email":"mamadhavlm662@gmail.com","fullname":"LEELA VENKATA MADHAVA MEDIBOYINA","email_sent":false}
+URL: /event-registration-main/register.php
+--------------------------------------------------------------------------------
+
+[01-Aug-2025 21:56:47 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\event-registration-main\update_test_payment.php on line 174

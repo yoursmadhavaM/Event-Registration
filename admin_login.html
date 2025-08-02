@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login - YAICESS Conference</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      max-width: 450px;
+      width: 100%;
+      animation: slideIn 0.6s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .login-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .logo-section {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #0d47a1;
+      margin-bottom: 10px;
+    }
+
+    .logo span {
+      color: #667eea;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 14px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #0d47a1;
+      font-size: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .input-group {
+      position: relative;
+    }
+
+    .input-group i {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #667eea;
+      font-size: 16px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 15px 15px 15px 45px;
+      border: 2px solid #e1e5e9;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      background: #f8f9fa;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #667eea;
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    input.error {
+      border-color: #dc3545;
+    }
+
+    .error-message {
+      color: #dc3545;
+      font-size: 12px;
+      margin-top: 5px;
+      display: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .note {
+      text-align: center;
+      margin-top: 25px;
+      font-size: 14px;
+      color: #666;
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 4px solid #667eea;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .back-link a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    .security-info {
+      margin-top: 20px;
+      padding: 15px;
+      background: #e3f2fd;
+      border-radius: 8px;
+      border-left: 4px solid #2196f3;
+    }
+
+    .security-info h4 {
+      margin: 0 0 10px 0;
+      color: #0d47a1;
+      font-size: 14px;
+    }
+
+    .security-info p {
+      margin: 5px 0;
+      font-size: 12px;
+      color: #666;
+    }
+
+    @media screen and (max-width: 480px) {
+      .login-container {
+        padding: 30px 20px;
+      }
+      
+      h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <form class="login-container" action="admin_dashboard.php" method="post" id="adminLoginForm">
+    <div class="logo-section">
+      <div class="logo">YAICESS<span>.</span></div>
+      <div class="subtitle">Admin Panel</div>
+    </div>
+
+    <h2><i class="fas fa-user-shield"></i> Admin Login</h2>
+
+    <div class="form-group">
+      <label for="username">Username</label>
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" name="username" id="username" placeholder="Enter admin username" required>
+      </div>
+      <div class="error-message" id="username-error"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" name="password" id="password" placeholder="Enter password" required>
+      </div>
+      <div class="error-message" id="password-error"></div>
+    </div>
+
+    <button type="submit" id="loginBtn">
+      <i class="fas fa-sign-in-alt"></i> Login
+    </button>
+
+    <div class="note">
+      <i class="fas fa-info-circle"></i>
+      <strong>Default Credentials:</strong> admin / admin123
+    </div>
+
+    <div class="security-info">
+      <h4><i class="fas fa-shield-alt"></i> Security Notice</h4>
+      <p>• This is a demo admin panel</p>
+      <p>• Change default credentials in production</p>
+      <p>• Enable HTTPS for secure access</p>
+    </div>
+  </form>
+
+  <div class="back-link">
+    <a href="project.html">
+      <i class="fas fa-arrow-left"></i> Back to Event Page
+    </a>
+  </div>
+
+  <script>
+    const form = document.getElementById('adminLoginForm');
+    const loginBtn = document.getElementById('loginBtn');
+    
+    // Form validation
+    function validateForm() {
+      let isValid = true;
+      
+      // Reset all error messages
+      document.querySelectorAll('.error-message').forEach(el => {
+        el.style.display = 'none';
+      });
+      document.querySelectorAll('input').forEach(el => {
+        el.classList.remove('error');
+      });
+      
+      // Validate username
+      const username = document.getElementById('username').value.trim();
+      if (username.length < 3) {
+        showError('username', 'Username must be at least 3 characters long');
+        isValid = false;
+      }
+      
+      // Validate password
+      const password = document.getElementById('password').value;
+      if (password.length < 6) {
+        showError('password', 'Password must be at least 6 characters long');
+        isValid = false;
+      }
+      
+      return isValid;
+    }
+    
+    function showError(fieldId, message) {
+      const field = document.getElementById(fieldId);
+      const errorDiv = document.getElementById(fieldId + '-error');
+      field.classList.add('error');
+      errorDiv.textContent = message;
+      errorDiv.style.display = 'block';
+    }
+    
+    form.addEventListener('submit', function(e) {
+      if (!validateForm()) {
+        e.preventDefault();
+        return;
+      }
+      
+      // Disable submit button to prevent double submission
+      loginBtn.disabled = true;
+      loginBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Logging in...';
+    });
+    
+    // Real-time validation
+    document.querySelectorAll('input').forEach(input => {
+      input.addEventListener('blur', function() {
+        const fieldId = this.id;
+        const value = this.value.trim();
+        
+        if (value === '') return;
+        
+        switch(fieldId) {
+          case 'username':
+            if (value.length < 3) {
+              showError('username', 'Username must be at least 3 characters long');
+            }
+            break;
+          case 'password':
+            if (value.length < 6) {
+              showError('password', 'Password must be at least 6 characters long');
+            }
+            break;
+        }
+      });
+      
+      input.addEventListener('input', function() {
+        this.classList.remove('error');
+        const errorDiv = document.getElementById(this.id + '-error');
+        errorDiv.style.display = 'none';
+      });
+    });
+    
+    // Add some security features
+    let loginAttempts = 0;
+    const maxAttempts = 5;
+    
+    form.addEventListener('submit', function(e) {
+      loginAttempts++;
+      
+      if (loginAttempts > maxAttempts) {
+        e.preventDefault();
+        alert('Too many login attempts. Please try again later.');
+        loginBtn.disabled = true;
+        setTimeout(() => {
+          loginBtn.disabled = false;
+          loginAttempts = 0;
+        }, 30000); // 30 seconds lockout
+        return;
+      }
+    });
+  </script>
+
+</body>
+</html>
